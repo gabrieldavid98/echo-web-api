@@ -1,8 +1,8 @@
 package main
 
 import (
-	"log"
 	"fmt"
+	"log"
 
 	"github.com/valyala/fasthttp"
 )
@@ -25,6 +25,6 @@ func main() {
 		}
 	}
 
-	log.Println("Http server listen on 8080")
-	fasthttp.ListenAndServe(":8080", mux)
+	log.Println("Http server listen on 80")
+	fasthttp.ListenAndServe(":80", mux)
 }
